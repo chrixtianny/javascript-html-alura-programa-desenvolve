@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    function mostra(calculoPontos){
+        document.write("O " + time + " tem " + calculoPontos + " pontos no campeonato")
+    }
+    var time = prompt("Qual seu time?")
+    var vitorias = parseInt(prompt("Quantas vitórias o " + time + " tem?"))
+    var empates = parseInt(prompt("Quantos empates o " + time + " tem?"))
+
+    var calculoPontos = (vitorias*3) + empates
+
+    mostra(calculoPontos)
+</script>

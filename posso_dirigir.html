@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function possoDirigir(idade, temCarteira) {
+ 
+                if (temCarteira.toUpperCase() == "SIM"){
+                    mostra("Maior de 18 anos e com carteira pode dirigir sim!");
+                    alert("Maior de 18 anos e com carteira pode dirigir sim!");
+            } else{
+                    mostra("Ainda não é possível!");
+                    alert("Ainda não é possível!");
+            }
+        }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    if (idade>=18){
+        var temCarteira = prompt("Tem carteira? Responda SIM ou NÃO");
+        possoDirigir(idade, temCarteira);
+    } else {
+        mostra("Ainda não é possível, menores de idade não podem dirigir!");
+    }
+   
+
+</script>
