@@ -8,8 +8,10 @@
 
     function exibeAlerta(evento) {
 
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
         console.log(evento);
-        alert('Cliquei!');
+        alert('Cliquei nas coordenadas '+ x + ','+ y);
     }
 
     tela.onclick = exibeAlerta;
